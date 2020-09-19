@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_app"
+    tools:context=".game">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="202dp"
+            android:layout_height="179dp"
+            android:layout_gravity="left"
+            android:src="@drawable/computer" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:src="@drawable/you" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:background="#4d1f00"
+            android:gravity="center"
+            android:text="My Score"
+            android:textColor="@android:color/white"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Score"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#4d3d00"
+            android:textColor="@android:color/white"
+            android:textSize="35dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/my_score"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:background="#993d00"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/your_score"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#997a00"
+            android:textColor="@android:color/white"
+            android:textSize="35dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#731706"
+        android:gravity="center"
+        android:text="Score 20 to win!"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#371804"
+        android:gravity="center"
+        android:text="Choose either Heads or Tails"
+        android:textColor="@android:color/white"
+        android:textSize="26dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/heads"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/heads" />
+
+        <ImageView
+            android:id="@+id/tails"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/tails" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="#490E03"
+        android:text="RESTART"
+        android:textColor="@android:color/white"
+        android:textSize="30dp" />
+
+
+
+</LinearLayout>
