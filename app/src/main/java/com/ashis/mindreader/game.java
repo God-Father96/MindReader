@@ -22,7 +22,7 @@ public class game extends AppCompatActivity {
     TextView my_score,your_score;
     ImageView heads,tails;
     int myscore,yourscore;
-    Button restart,finishbutton;
+    Button restart,finishbutton,nothing;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
