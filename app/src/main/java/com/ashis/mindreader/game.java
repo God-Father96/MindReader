@@ -40,11 +40,14 @@ public class game extends AppCompatActivity {
 
         Python py = Python.getInstance();
         final PyObject pyobj = py.getModule("script");
+
+
+
         heads.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                PyObject obj1 = pyobj.callAttr("gameplay","1");
-                if (obj1.toString().equals("1")){
+                PyObject obj1 = pyobj.callAttr("gameplay","0");
+                if (obj1.toString().equals("0")){
                     myscore++;
                     my_score.setText(String.valueOf(myscore));
                     your_score.setText(String.valueOf(yourscore));
@@ -96,8 +99,8 @@ public class game extends AppCompatActivity {
         tails.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                PyObject obj2 = pyobj.callAttr("gameplay","0");
-                if (obj2.toString().equals("0")){
+                PyObject obj2 = pyobj.callAttr("gameplay","1");
+                if (obj2.toString().equals("1")){
                     myscore++;
                     my_score.setText(String.valueOf(myscore));
                     your_score.setText(String.valueOf(yourscore));

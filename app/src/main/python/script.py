@@ -42,11 +42,12 @@ def reset():
 
 def gameplay(number):
   
-  predicted = prediction()
+  
   player_input = int(number)
+  predicted = prediction()
   update_inputs(player_input)
-  a = prediction()
-  return a
+ 
+  return predicted
         
     
 
